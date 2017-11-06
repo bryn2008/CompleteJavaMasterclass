@@ -8,7 +8,6 @@ public class MobilePhone implements ITelephone {
 
     public MobilePhone(int myNumber){
         this.myNumber = myNumber;
-        isOn = true;
     }
 
 
@@ -31,7 +30,7 @@ public class MobilePhone implements ITelephone {
     @Override
     public void answer() {
         if(isRinging){
-            System.out.println("Answer the mobile phone");
+            System.out.println("Answering the mobile phone");
             isRinging = false;
         }
 
