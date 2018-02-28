@@ -1,4 +1,4 @@
-#Setup
+#Section 2 - Setup
 
 This covers the following: 
 
