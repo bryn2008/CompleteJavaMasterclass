@@ -9,29 +9,27 @@ public class CodeBlocks {
         int levelCompleted = 5;
         int bonus = 100;
 
-        //if (score == 4000)
-        //    System.out.println("Your score was 5000"); // this will run when not in a code block for the if statement
+        calculateScore(gameOver, score, levelCompleted, bonus);
 
-//        if (score < 5000 && score > 1000) {
-//            System.out.println("Your score was less than 5000 but greater than 1000");
-//        } else if (score < 1000){
-//            System.out.println("Your score was less than a 1000");
-//        } else {
-//            System.out.println("Got here");
+        // refactor to use a method and avoid duplication
+        calculateScore(gameOver, 10000, 8, 200);
+
+//        score = 10000;
+//        levelCompleted = 8;
+//        bonus = 200;
+//
+//        if(gameOver){
+//            int finalScore = score + (levelCompleted * bonus);
+//            System.out.println("Your final score was " + finalScore);
 //        }
+
+    }
+
+    public static void calculateScore(boolean gameOver, int score, int levelCompleted, int bonus){
 
         if(gameOver){
             int finalScore = score + (levelCompleted * bonus);
             finalScore += 1000;  // disadvantage of duplicated code
-            System.out.println("Your final score was " + finalScore);
-        }
-
-        score = 10000;
-        levelCompleted = 8;
-        bonus = 200;
-
-        if(gameOver){
-            int finalScore = score + (levelCompleted * bonus);
             System.out.println("Your final score was " + finalScore);
         }
 
